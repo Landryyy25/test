@@ -1,0 +1,524 @@
+@font-face {
+    font-family: 'panthera';
+    src: url(../Polices/panthera.otf);
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'beyno';
+    src: url(../Polices/BEYNO.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'wakanda';
+    src: url(../Polices/wakanda-forever-regular.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'cantarell';
+    src: url(../Polices/Cantarell-Regular.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --white-color: #FFFFFF;
+    --gradient-white: #F2CEF2;
+    --purple-color: #9E91B7;
+    --mauve-color: #DF99F2;
+    --blue-color: #3D2DA6;
+    --gradient-blue: #07338C;
+    --indigo-color: #021740;
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+p{
+    color: var(--white-color);
+    font-family: 'cantarell';
+    font-size: 16px;
+}
+
+blockquote p{
+    color: var(--white-color);
+    font-family: 'cantarell';
+    font-size: 14px;
+}
+
+.voir a{
+    text-decoration: none;
+    padding-top: 15px;
+}
+
+body{
+    background-image: url(../Illustrations/logo/arrière_plan.png);
+    width: 100%;
+}
+
+ /* configuartion des voir plus sans animations*/
+
+.voir {
+    color: var(--white-color);
+    font-family: 'cantarell';
+    text-decoration: underline;
+}
+
+.bar1{
+    height: 500px;
+    position: fixed;
+    left: 3%;
+    border-left: 5px solid var(--purple-color);
+    
+}
+.bar2{
+    height: 300px;
+    position: fixed;
+    left: 5%;
+    border-left: 5px solid var(--purple-color);
+    
+}
+
+/*Design de la navigation*/
+
+nav{
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    padding: 30px 0;
+}
+
+ul{
+    list-style: none;
+}
+
+nav ul li{
+    display: inline-block;
+    vertical-align: top;
+}
+
+nav ul a{
+    font-family: 'beyno';
+    color: var(--purple-color);
+    font-size: 25px;
+    font-weight: 20px;
+    text-decoration: none;
+    display: block;
+    padding: 20px;
+}
+
+ul a:link {
+    text-decoration: none;
+    color: var(--white-color);
+}
+
+ul a:visited {
+    text-decoration: none;
+    color: var(--purple-color);
+}
+
+nav ul a:hover {
+    text-decoration: underline;
+    color: var(--white-color);
+    padding-bottom: 3px;
+}
+
+nav .logo:hover {
+    filter:  invert(22%) sepia(58%) saturate(2921%) hue-rotate(238deg) brightness(76%) contrast(102%);
+}
+
+/*Design des scroll*/
+
+.scrolling {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    position: fixed;
+    left: 59px;
+    top: 295px;
+}
+
+.social :hover {
+    filter: invert(22%) sepia(58%) saturate(0%) hue-rotate(238deg) brightness(100%) contrast(1000%);
+}
+
+.scrolling .social {
+    margin-top: 15px;
+}
+
+/*Design de la partie HERO*/
+
+.hero {
+    width: 72%;
+    display: flex;
+    align-items: stretch;
+}
+
+.hero h1 {
+    font-family: 'panthera';
+    font-size: 60px;
+    color: var(--purple-color);
+    padding-bottom: 10px;
+}
+
+.hero h2 {
+    font-family: 'beyno';
+    font-size: 32px;
+    color: var(--purple-color);
+}
+
+.hero p {
+    text-align: justify;
+    padding-top: 25px;
+    width: 85%;
+}
+
+.hero .descri {
+    padding-top: 170px;
+    padding-left: 40px;
+    margin-left: 7.5%;
+}
+
+.hero .idf img {
+    width: 220%;
+    
+}
+
+/*design de la partie personnage*/
+
+.perso .content {
+    display: flex;
+    margin-left: 7.5%;
+    height: 300px;
+    margin-bottom: 100px;
+    text-align: justify;
+    background-color: var(--indigo-color);
+    width: 95%;   
+}
+
+.perso img{
+    height: 300px;
+}
+
+.perso h2 {
+    font-family: 'beyno';
+    font-weight: lighter;
+    color: var(--purple-color);
+    font-size: 18px;
+    margin: 10px;
+}
+
+.perso p{
+    text-align: justify;
+    display: block;
+    font-family: 'cantarell';
+    font-size: 15px;
+    margin: 10PX;
+}
+
+.perso .voir {
+    margin-left: 10px;
+}
+.perso img:hover {
+    transform: scale(110%);
+    transition: 0.5s;
+}
+
+/*design de la partie principale*/
+
+#principal {
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+}
+
+#principal h2 {
+    font-family: 'beyno';
+    color: var(--purple-color);
+    font-size: 18px;
+    margin: 0 auto;
+}
+
+#principal p {
+    font-family: 'cantarell';
+    font-size: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+#principal blockquote {
+    font-size: 10px;
+}
+
+#principal .profil {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.profil img {
+    width: 350px;
+    position: absolute;
+    top: 1200px;
+    left: 850px;
+    z-index: 1;
+}
+
+.profil-content {
+    background-color: var(--white-color);
+    height: 750px;
+    width: 450px;
+    padding: 0 55px;
+    border-radius: 10px;
+    position: absolute;
+    top: 1450px;
+    left: 800px;
+    padding-top: 190px;
+    line-height: 10px;
+}
+.profil-content h4{
+    color: black;
+    font-size: 23px;
+    text-align: center;
+    margin-top: 80px;
+}
+
+#principal nav a {
+    display: flex;
+    padding: 10px 12px;
+    background-color: var(--blue-color);
+    color: var(--blanc);
+    text-decoration: none;
+    justify-content: center;
+    font-size: 15px;
+    border-radius: 5px;
+    color: var(--gradient-white);
+}
+#principal .profil p {
+    color: var(--indigo-color);
+    font-weight:900;
+    font-size: 15px;
+}
+
+#principal .parenthèse{
+    font-size: 12px;
+}
+#principal .panther-img2 {
+    position: absolute;
+    top: 2300px;
+    width: 480px;
+    left: 800px;
+}
+
+/* SECTION 4 : Formulaire */
+.formulaire {
+    background: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+
+}
+
+.formulaire {
+    background-image: url("../Illustrations/Accueil/Pantherhome7.png");
+    height: 800px;
+}
+
+.champ {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.85) 15%, rgba(255, 255, 255, 0.08));
+    margin: 130px 0 75px;
+    padding: 20px;
+    width: 50%;
+    border-radius: 100px ;
+    border: none;
+    text-align: center;
+}
+
+.champ p, .champ h2 {
+    color: black;
+    text-align: center;
+    font-family:'cantarell';
+    margin: 0;
+}
+.champ h2{
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.champ input {
+    width: 70%;
+    height: 40px;
+    border-radius: 38px;
+    padding: 10px 20px;
+    background-color: transparent;
+    border: solid rgba(0, 0, 0, 0.5) 1px;
+}
+
+.champ input, .champ textarea {
+    margin: 10px 0;
+}
+
+textarea {
+    width: 70%;
+    padding: 10px 20px;
+    border-radius: 38px;
+    background-color: transparent;
+    border: solid rgba(0, 0, 0, 0.5) 1px;
+}
+
+.champ input ::placeholder, .champ textarea::placeholder {
+    color: black;
+    font-family: 'cantarell';
+}
+
+/* Media queries*/
+@media screen and (max-width: 600px) {
+    .champ input {
+        width: 100%;
+        height: 30px;
+        border-radius: 10px;
+        padding: 5px 15px;
+    }
+
+    .champ textarea {
+        width: 100%;
+        border-radius: 10px;
+        padding: 5px 15px;
+    }
+}
+
+/* Boutons submit du formulaire */
+.champ button {
+    width: 125px;
+    height: 40px;
+    border: none;
+    border-radius: 38px;
+    background-color: var(--mauve-color);
+    font-weight: bolder;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.submitBtn:hover {
+    filter: drop-shadow(0 0 10px var(--mauve-color)) ;
+}
+
+/* Popup Box avec un peu de JavaScript*/
+#popupBox {
+    display: none;
+    padding: 20px;
+    background-color:#3d2da691;
+    color: white;
+    margin: 15px;
+    border-radius: 38px;
+  }
+  
+  /* Popup Box button */
+  .closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  .closebtn:hover {
+    color: black;
+  }
+
+ /*design footer*/
+#footer{
+    background-image: url(../Illustrations/logo/back_footer.png);
+    height: 500px;
+    margin-top: 150px;
+}
+.footer {
+    display: flex;
+    flex-direction: row;
+}
+.picture {
+    width: 220px;
+    position: relative;
+    top: 140px;
+    left: 330px;
+}
+.pictures {
+    width: 120px;
+    position: relative;
+    top: 13px;
+    left: 155px;
+}
+.pictures:hover{
+    filter: invert(50%) sepia(100%) saturate(7440%) hue-rotate(239deg) brightness(87%) contrast(100%);
+}
+.footer-logo:hover {
+    transform: scale(1.1);
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top: 140px;
+    left: 300px;
+    width: 500px;
+    justify-content: space-between;
+}
+#footer h3 {
+    font-family: "Cantarell";
+    font-size: 17px;
+    letter-spacing: 5px;
+}
+#footer .pages {
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    
+}
+
+#footer .pages a{
+    text-decoration: none;
+    color: var(--blanc);
+    padding: 5px 0;
+    font-weight: lighter;
+}
+#footer .pages a:hover{
+    text-decoration: underline;
+}
+.nous{
+    padding: 25px 0;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.nous img{
+    width: 35px;
+}
+.nous img:hover{
+    transform: scale(1.1);
+}
+.down {
+    position: relative;
+    top: 75px;
+    display: flex;
+    width: 500px;
+    left: 650px;
+    gap: 18px;
+    flex-direction: column;
+}
